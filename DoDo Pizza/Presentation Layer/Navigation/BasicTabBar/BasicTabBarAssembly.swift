@@ -23,7 +23,7 @@ enum BasicTabBarAssembly {
         }
         
         reference.viewControllers = rootControllers
-        reference.selectedIndex = 1
+        reference.selectedIndex = 0
     }
     
 }

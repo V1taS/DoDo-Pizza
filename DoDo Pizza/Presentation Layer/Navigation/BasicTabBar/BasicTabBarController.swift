@@ -24,10 +24,10 @@ class BasicTabBarController: UITabBarController {
         self.tabBar.backgroundImage = UIImage()
         self.tabBar.shadowImage = UIImage()
         
-        self.tabBar.barTintColor = AppTheme.accentBarTintColor
         self.tabBar.tintColor = AppTheme.accentTextMain
+        self.tabBar.backgroundColor = AppTheme.accentBarTintColor.withAlphaComponent(0.9)
         self.tabBar.unselectedItemTintColor = AppTheme.accentUnselected
-        self.tabBar.isTranslucent = false
+        self.tabBar.isTranslucent = true
         guard let tabBarItems = self.tabBar.items else { return }
         for item in tabBarItems {
             item.setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 16.0)], for: .normal)

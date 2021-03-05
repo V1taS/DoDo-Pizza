@@ -20,3 +20,25 @@ class BasicTabBarModel {
         self.imageSelected = imageSelected
     }
 }
+
+extension BasicTabBarModel {
+    static func stub(viewController: UIViewController) -> [BasicTabBarModel] {
+        return [
+            BasicTabBarModel(title: "Меню",
+                             controller: viewController,
+                             image: UIImage(systemName: "flame"),
+                             imageSelected: UIImage(named: "flame")),
+            BasicTabBarModel(title: "Профиль",
+                             controller: InitialViewController(),
+                             image: UIImage(systemName: "person.circle"),
+                             imageSelected: UIImage(named: "person.circle")),
+            BasicTabBarModel(title: "Контакты",
+                             controller: InitialViewController(),
+                             image: UIImage(systemName: "map"),
+                             imageSelected: UIImage(named: "map")),
+            BasicTabBarModel(title: "Корзина",
+                             controller: InitialViewController(),
+                             image: UIImage(systemName: "tray"),
+                             imageSelected: UIImage(named: "tray"))]
+    }
+}

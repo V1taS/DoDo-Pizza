@@ -16,7 +16,10 @@ enum AppTheme {
     
     // MARK: - Accent colors of the app
     public static var accentBarTintColor: UIColor {
-        return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        return #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+    }
+    public static var accentUnselected: UIColor {
+        return #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
     }
     
     public static var accentTextMain: UIColor {
@@ -31,7 +34,5 @@ enum AppTheme {
         return #colorLiteral(red: 0.003921568627, green: 0.8235294118, blue: 0.737254902, alpha: 1)
     }
     
-    public static var accentUnselected: UIColor {
-        return #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-    }
+    
 }

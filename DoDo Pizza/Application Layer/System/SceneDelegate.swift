@@ -12,7 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             self.setup(window)
@@ -26,7 +25,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         self.window = window
         self.window?.overrideUserInterfaceStyle = .light
-        self.window?.rootViewController = viewController
+        
+        let tabBar = BasicTabBarAssembly.create()
+        let basicTabBarModel = BasicTabBarModel.stub(viewController: viewController)
+        BasicTabBarAssembly.configure(with: tabBar, data: basicTabBarModel)
+
+        self.window?.rootViewController = tabBar
         self.window?.makeKeyAndVisible()
     }
 
