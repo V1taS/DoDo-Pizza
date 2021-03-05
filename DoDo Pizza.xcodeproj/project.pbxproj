@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB082B125F25EFB0067665D /* AppDelegate.swift */; };
 		1BB082B425F25EFB0067665D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB082B325F25EFB0067665D /* SceneDelegate.swift */; };
-		1BB082B625F25EFB0067665D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB082B525F25EFB0067665D /* ViewController.swift */; };
-		1BB082B925F25EFB0067665D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB082B725F25EFB0067665D /* Main.storyboard */; };
 		1BB082BB25F25EFB0067665D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB082BA25F25EFB0067665D /* Assets.xcassets */; };
 		1BB082BE25F25EFB0067665D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB082BC25F25EFB0067665D /* LaunchScreen.storyboard */; };
+		1BB0830D25F262EB0067665D /* InitialAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0830C25F262EB0067665D /* InitialAssembly.swift */; };
+		1BB0831125F263210067665D /* InitialInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0831025F263210067665D /* InitialInteractor.swift */; };
+		1BB0831425F263E80067665D /* InitialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0831325F263E80067665D /* InitialPresenter.swift */; };
+		1BB0831725F2645E0067665D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0831625F2645E0067665D /* InitialViewController.swift */; };
+		1BB0833225F276E80067665D /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0833125F276E80067665D /* InitialViewController.xib */; };
+		1BB0833825F289A80067665D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0833725F289A80067665D /* UIViewController.swift */; };
+		1BB0833D25F2A5BD0067665D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0833C25F2A5BD0067665D /* MainCell.swift */; };
+		1BB0834025F2A5CC0067665D /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0833F25F2A5CC0067665D /* MainCell.xib */; };
+		1BB0834725F2B2F00067665D /* BasicTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0834625F2B2F00067665D /* BasicTabBarAssembly.swift */; };
+		1BB0834B25F2B3090067665D /* BasicTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0834A25F2B3090067665D /* BasicTabBarController.swift */; };
+		1BB0834E25F2B3210067665D /* BasicTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0834D25F2B3210067665D /* BasicTabBarModel.swift */; };
+		1BB0835225F2B3CB0067665D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0835125F2B3CB0067665D /* AppTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BB082AE25F25EFB0067665D /* DoDo Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoDo Pizza.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB082B125F25EFB0067665D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BB082B325F25EFB0067665D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BB082B525F25EFB0067665D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1BB082B825F25EFB0067665D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BB082BA25F25EFB0067665D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB082BD25F25EFB0067665D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BB082BF25F25EFB0067665D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BB0830C25F262EB0067665D /* InitialAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialAssembly.swift; sourceTree = "<group>"; };
+		1BB0831025F263210067665D /* InitialInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialInteractor.swift; sourceTree = "<group>"; };
+		1BB0831325F263E80067665D /* InitialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialPresenter.swift; sourceTree = "<group>"; };
+		1BB0831625F2645E0067665D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		1BB0833125F276E80067665D /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		1BB0833725F289A80067665D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1BB0833C25F2A5BD0067665D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		1BB0833F25F2A5CC0067665D /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		1BB0834625F2B2F00067665D /* BasicTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBarAssembly.swift; sourceTree = "<group>"; };
+		1BB0834A25F2B3090067665D /* BasicTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBarController.swift; sourceTree = "<group>"; };
+		1BB0834D25F2B3210067665D /* BasicTabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBarModel.swift; sourceTree = "<group>"; };
+		1BB0835125F2B3CB0067665D /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,161 @@
 		1BB082B025F25EFB0067665D /* DoDo Pizza */ = {
 			isa = PBXGroup;
 			children = (
-				1BB082B125F25EFB0067665D /* AppDelegate.swift */,
-				1BB082B325F25EFB0067665D /* SceneDelegate.swift */,
-				1BB082B525F25EFB0067665D /* ViewController.swift */,
-				1BB082B725F25EFB0067665D /* Main.storyboard */,
-				1BB082BA25F25EFB0067665D /* Assets.xcassets */,
-				1BB082BC25F25EFB0067665D /* LaunchScreen.storyboard */,
-				1BB082BF25F25EFB0067665D /* Info.plist */,
+				1BB0830025F260750067665D /* Application Layer */,
+				1BB0830225F2607F0067665D /* Data Layer */,
+				1BB0830325F260880067665D /* Presentation Layer */,
+				1BB0830425F260900067665D /* Service Layer */,
 			);
 			path = "DoDo Pizza";
+			sourceTree = "<group>";
+		};
+		1BB0830025F260750067665D /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0832625F2710B0067665D /* System */,
+				1BB0832525F270FF0067665D /* Scenes */,
+				1BB0831C25F265490067665D /* Resources */,
+				1BB0833625F289880067665D /* Extension */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		1BB0830225F2607F0067665D /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		1BB0830325F260880067665D /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0834425F2B2D60067665D /* Navigation */,
+				1BB0830A25F262C90067665D /* Scenes */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		1BB0830425F260900067665D /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		1BB0830A25F262C90067665D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0832925F272EF0067665D /* Components */,
+				1BB0830B25F262D60067665D /* Initial */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1BB0830B25F262D60067665D /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0833125F276E80067665D /* InitialViewController.xib */,
+				1BB0831625F2645E0067665D /* InitialViewController.swift */,
+				1BB0831325F263E80067665D /* InitialPresenter.swift */,
+				1BB0831025F263210067665D /* InitialInteractor.swift */,
+				1BB0830C25F262EB0067665D /* InitialAssembly.swift */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		1BB0831C25F265490067665D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0835025F2B3B90067665D /* Style */,
+				1BB082BA25F25EFB0067665D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BB0832525F270FF0067665D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1BB082BC25F25EFB0067665D /* LaunchScreen.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1BB0832625F2710B0067665D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1BB082B125F25EFB0067665D /* AppDelegate.swift */,
+				1BB082B325F25EFB0067665D /* SceneDelegate.swift */,
+				1BB082BF25F25EFB0067665D /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		1BB0832925F272EF0067665D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0833B25F2A3D80067665D /* ActivityIndicator */,
+				1BB0832B25F273EA0067665D /* CollectionViewCells */,
+				1BB0832A25F273090067665D /* TableViewCells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1BB0832A25F273090067665D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0833C25F2A5BD0067665D /* MainCell.swift */,
+				1BB0833F25F2A5CC0067665D /* MainCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1BB0832B25F273EA0067665D /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		1BB0833625F289880067665D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0833725F289A80067665D /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1BB0833B25F2A3D80067665D /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		1BB0834425F2B2D60067665D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0834525F2B2E20067665D /* BasicTabBar */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1BB0834525F2B2E20067665D /* BasicTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0834625F2B2F00067665D /* BasicTabBarAssembly.swift */,
+				1BB0834A25F2B3090067665D /* BasicTabBarController.swift */,
+				1BB0834D25F2B3210067665D /* BasicTabBarModel.swift */,
+			);
+			path = BasicTabBar;
+			sourceTree = "<group>";
+		};
+		1BB0835025F2B3B90067665D /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0835125F2B3CB0067665D /* AppTheme.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +292,8 @@
 			files = (
 				1BB082BE25F25EFB0067665D /* LaunchScreen.storyboard in Resources */,
 				1BB082BB25F25EFB0067665D /* Assets.xcassets in Resources */,
-				1BB082B925F25EFB0067665D /* Main.storyboard in Resources */,
+				1BB0833225F276E80067665D /* InitialViewController.xib in Resources */,
+				1BB0834025F2A5CC0067665D /* MainCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +304,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB082B625F25EFB0067665D /* ViewController.swift in Sources */,
 				1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */,
+				1BB0831425F263E80067665D /* InitialPresenter.swift in Sources */,
+				1BB0830D25F262EB0067665D /* InitialAssembly.swift in Sources */,
+				1BB0831725F2645E0067665D /* InitialViewController.swift in Sources */,
+				1BB0834B25F2B3090067665D /* BasicTabBarController.swift in Sources */,
+				1BB0834725F2B2F00067665D /* BasicTabBarAssembly.swift in Sources */,
 				1BB082B425F25EFB0067665D /* SceneDelegate.swift in Sources */,
+				1BB0833825F289A80067665D /* UIViewController.swift in Sources */,
+				1BB0834E25F2B3210067665D /* BasicTabBarModel.swift in Sources */,
+				1BB0835225F2B3CB0067665D /* AppTheme.swift in Sources */,
+				1BB0831125F263210067665D /* InitialInteractor.swift in Sources */,
+				1BB0833D25F2A5BD0067665D /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1BB082B725F25EFB0067665D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1BB082B825F25EFB0067665D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1BB082BC25F25EFB0067665D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +456,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "DoDo Pizza/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DoDo Pizza/Application Layer/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sosinvitalii.DoDo-Pizza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +476,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "DoDo Pizza/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DoDo Pizza/Application Layer/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sosinvitalii.DoDo-Pizza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
