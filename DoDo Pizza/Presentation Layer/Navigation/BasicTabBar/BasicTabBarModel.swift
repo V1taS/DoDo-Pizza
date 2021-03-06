@@ -26,19 +26,19 @@ extension BasicTabBarModel {
         return [
             BasicTabBarModel(title: "Меню",
                              controller: viewController,
-                             image: UIImage(systemName: "flame"),
-                             imageSelected: UIImage(named: "flame")),
+                             image: UIImage(named: "menu"),
+                             imageSelected: UIImage(named: "menu")),
             BasicTabBarModel(title: "Профиль",
                              controller: InitialViewController(),
-                             image: UIImage(systemName: "person.circle"),
-                             imageSelected: UIImage(named: "person.circle")),
+                             image: UIImage(named: "profile"),
+                             imageSelected: UIImage(named: "profile")),
             BasicTabBarModel(title: "Контакты",
                              controller: InitialViewController(),
-                             image: UIImage(systemName: "map"),
-                             imageSelected: UIImage(named: "map")),
+                             image: UIImage(named: "contact"),
+                             imageSelected: UIImage(named: "contact")),
             BasicTabBarModel(title: "Корзина",
                              controller: InitialViewController(),
-                             image: UIImage(systemName: "tray"),
-                             imageSelected: UIImage(named: "tray"))]
+                             image: UIImage(named: "basket"),
+                             imageSelected: UIImage(named: "basket"))]
     }
 }

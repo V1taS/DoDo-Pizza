@@ -16,6 +16,10 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var mainButton: UIButton!
     
     
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
     // MARK: - Initialization
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -25,7 +29,6 @@ class MainCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
-    // MARK: - Setup functions
     open override func awakeFromNib() {
         super.awakeFromNib()
         setupView()

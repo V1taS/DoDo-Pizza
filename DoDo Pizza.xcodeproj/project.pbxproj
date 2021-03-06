@@ -23,6 +23,14 @@
 		1BB0834B25F2B3090067665D /* BasicTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0834A25F2B3090067665D /* BasicTabBarController.swift */; };
 		1BB0834E25F2B3210067665D /* BasicTabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0834D25F2B3210067665D /* BasicTabBarModel.swift */; };
 		1BB0835225F2B3CB0067665D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0835125F2B3CB0067665D /* AppTheme.swift */; };
+		1BB0836025F2CCBC0067665D /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0835F25F2CCBC0067665D /* CustomNavigationBar.swift */; };
+		1BB0836425F2CCC90067665D /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0836325F2CCC90067665D /* CustomNavigationBar.xib */; };
+		1BB0836725F2DE9B0067665D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0836625F2DE9B0067665D /* UIView.swift */; };
+		1BB0836D25F2FC750067665D /* AdvertisingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0836C25F2FC750067665D /* AdvertisingCell.swift */; };
+		1BB0837125F2FC850067665D /* AdvertisingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0837025F2FC850067665D /* AdvertisingCell.xib */; };
+		1BB083A325F312110067665D /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB083A225F312110067665D /* UITableView.swift */; };
+		1BB083A625F319920067665D /* StyleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB083A525F319920067665D /* StyleWrapper.swift */; };
+		1BB083A925F31D140067665D /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB083A825F31D140067665D /* Stylable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,14 @@
 		1BB0834A25F2B3090067665D /* BasicTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBarController.swift; sourceTree = "<group>"; };
 		1BB0834D25F2B3210067665D /* BasicTabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBarModel.swift; sourceTree = "<group>"; };
 		1BB0835125F2B3CB0067665D /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		1BB0835F25F2CCBC0067665D /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		1BB0836325F2CCC90067665D /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
+		1BB0836625F2DE9B0067665D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1BB0836C25F2FC750067665D /* AdvertisingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingCell.swift; sourceTree = "<group>"; };
+		1BB0837025F2FC850067665D /* AdvertisingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisingCell.xib; sourceTree = "<group>"; };
+		1BB083A225F312110067665D /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		1BB083A525F319920067665D /* StyleWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleWrapper.swift; sourceTree = "<group>"; };
+		1BB083A825F31D140067665D /* Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +185,7 @@
 		1BB0832925F272EF0067665D /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1BB0835D25F2CC350067665D /* Custom */,
 				1BB0833B25F2A3D80067665D /* ActivityIndicator */,
 				1BB0832B25F273EA0067665D /* CollectionViewCells */,
 				1BB0832A25F273090067665D /* TableViewCells */,
@@ -188,6 +205,7 @@
 		1BB0832B25F273EA0067665D /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				1BB0836B25F2FC1B0067665D /* ADV */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -196,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				1BB0833725F289A80067665D /* UIViewController.swift */,
+				1BB0836625F2DE9B0067665D /* UIView.swift */,
+				1BB083A225F312110067665D /* UITableView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,8 +249,36 @@
 			isa = PBXGroup;
 			children = (
 				1BB0835125F2B3CB0067665D /* AppTheme.swift */,
+				1BB083A525F319920067665D /* StyleWrapper.swift */,
+				1BB083A825F31D140067665D /* Stylable.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		1BB0835D25F2CC350067665D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0835E25F2CC5F0067665D /* NavigationBar */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		1BB0835E25F2CC5F0067665D /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0835F25F2CCBC0067665D /* CustomNavigationBar.swift */,
+				1BB0836325F2CCC90067665D /* CustomNavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		1BB0836B25F2FC1B0067665D /* ADV */ = {
+			isa = PBXGroup;
+			children = (
+				1BB0836C25F2FC750067665D /* AdvertisingCell.swift */,
+				1BB0837025F2FC850067665D /* AdvertisingCell.xib */,
+			);
+			path = ADV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BB082BE25F25EFB0067665D /* LaunchScreen.storyboard in Resources */,
+				1BB0836425F2CCC90067665D /* CustomNavigationBar.xib in Resources */,
+				1BB0837125F2FC850067665D /* AdvertisingCell.xib in Resources */,
 				1BB082BB25F25EFB0067665D /* Assets.xcassets in Resources */,
 				1BB0833225F276E80067665D /* InitialViewController.xib in Resources */,
 				1BB0834025F2A5CC0067665D /* MainCell.xib in Resources */,
@@ -307,13 +357,19 @@
 				1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */,
 				1BB0831425F263E80067665D /* InitialPresenter.swift in Sources */,
 				1BB0830D25F262EB0067665D /* InitialAssembly.swift in Sources */,
+				1BB083A625F319920067665D /* StyleWrapper.swift in Sources */,
 				1BB0831725F2645E0067665D /* InitialViewController.swift in Sources */,
 				1BB0834B25F2B3090067665D /* BasicTabBarController.swift in Sources */,
+				1BB0836025F2CCBC0067665D /* CustomNavigationBar.swift in Sources */,
 				1BB0834725F2B2F00067665D /* BasicTabBarAssembly.swift in Sources */,
 				1BB082B425F25EFB0067665D /* SceneDelegate.swift in Sources */,
+				1BB083A925F31D140067665D /* Stylable.swift in Sources */,
 				1BB0833825F289A80067665D /* UIViewController.swift in Sources */,
 				1BB0834E25F2B3210067665D /* BasicTabBarModel.swift in Sources */,
+				1BB0836725F2DE9B0067665D /* UIView.swift in Sources */,
+				1BB0836D25F2FC750067665D /* AdvertisingCell.swift in Sources */,
 				1BB0835225F2B3CB0067665D /* AppTheme.swift in Sources */,
+				1BB083A325F312110067665D /* UITableView.swift in Sources */,
 				1BB0831125F263210067665D /* InitialInteractor.swift in Sources */,
 				1BB0833D25F2A5BD0067665D /* MainCell.swift in Sources */,
 			);

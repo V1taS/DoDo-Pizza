@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="DoDo_Pizza" customModuleProvider="target">
             <connections>
+                <outlet property="customNavigationBar" destination="ffY-93-qOX" id="8dc-ea-XSI"/>
+                <outlet property="tableView" destination="TOj-Ap-h2v" id="iCG-Wj-8iN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="BKZ-cb-iqS"/>
             </connections>
         </placeholder>
@@ -19,18 +21,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
-                    <rect key="frame" x="0.0" y="77" width="414" height="819"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
+                    <rect key="frame" x="0.0" y="107" width="414" height="789"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="789" id="jVX-O4-utt"/>
+                    </constraints>
+                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-93-qOX" customClass="CustomNavigationBar" customModule="DoDo_Pizza" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="TOj-Ap-h2v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6us-Kh-bgO"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79A-w0-12J"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TvR-aB-ilS"/>
+                <constraint firstItem="TOj-Ap-h2v" firstAttribute="top" secondItem="ffY-93-qOX" secondAttribute="bottom" id="Xiu-F5-Dqk"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cRv-NB-nvS"/>
+                <constraint firstItem="TOj-Ap-h2v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jDo-vp-3Hd"/>
+                <constraint firstAttribute="bottom" secondItem="TOj-Ap-h2v" secondAttribute="bottom" id="khY-Hn-Z4L"/>
+            </constraints>
             <point key="canvasLocation" x="76.811594202898561" y="94.419642857142847"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

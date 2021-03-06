@@ -12,5 +12,4 @@ extension UIViewController {
     class var identifier: String {
         return String(describing: self)
     }
-    
 }

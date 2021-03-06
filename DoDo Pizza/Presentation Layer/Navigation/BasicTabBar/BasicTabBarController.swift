@@ -25,7 +25,7 @@ class BasicTabBarController: UITabBarController {
         self.tabBar.shadowImage = UIImage()
         
         self.tabBar.tintColor = AppTheme.accentTextMain
-        self.tabBar.backgroundColor = AppTheme.accentBarTintColor.withAlphaComponent(0.9)
+        self.tabBar.backgroundColor = AppTheme.accentBarTintColor.withAlphaComponent(0.97)
         self.tabBar.unselectedItemTintColor = AppTheme.accentUnselected
         self.tabBar.isTranslucent = true
         guard let tabBarItems = self.tabBar.items else { return }
