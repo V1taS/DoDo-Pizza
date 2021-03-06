@@ -29,15 +29,15 @@ extension BasicTabBarModel {
                              image: UIImage(named: "menu"),
                              imageSelected: UIImage(named: "menu")),
             BasicTabBarModel(title: "Профиль",
-                             controller: InitialViewController(),
+                             controller: UIViewController(),
                              image: UIImage(named: "profile"),
                              imageSelected: UIImage(named: "profile")),
             BasicTabBarModel(title: "Контакты",
-                             controller: InitialViewController(),
+                             controller: UIViewController(),
                              image: UIImage(named: "contact"),
                              imageSelected: UIImage(named: "contact")),
             BasicTabBarModel(title: "Корзина",
-                             controller: InitialViewController(),
+                             controller: UIViewController(),
                              image: UIImage(named: "basket"),
                              imageSelected: UIImage(named: "basket"))]
     }

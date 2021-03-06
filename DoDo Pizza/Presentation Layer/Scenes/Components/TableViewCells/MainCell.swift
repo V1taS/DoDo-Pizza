@@ -13,8 +13,7 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var pizzaImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var mainButton: UIButton!
-    
+    @IBOutlet weak var mainButton: UIButton!    
     
     static var identifier: String {
         return String(describing: self)
@@ -36,9 +35,25 @@ class MainCell: UITableViewCell {
     
     // MARK: - Setup functions
     func setupView() {
+        mainButton.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
+        mainButton.addTarget(self, action: #selector(touchDown), for: .touchDown)
+        
         self.backgroundColor = .clear
         self.contentView.backgroundColor = .clear
         self.mainButton.layer.cornerRadius = self.mainButton.frame.height / 2
         self.mainButton.layer.masksToBounds = true
+    }
+}
+
+// MARK: - Actions
+extension MainCell {
+    @objc private func touchUpInside() {
+        mainButton.setTitleColor(.orange, for: .normal)
+        mainButton.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9490196078, blue: 0.9647058824, alpha: 1)
+    }
+    
+    @objc private func touchDown() {
+        mainButton.setTitleColor(.white, for: .normal)
+        mainButton.backgroundColor = .orange
     }
 }
