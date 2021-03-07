@@ -11,7 +11,6 @@
 		1B4F752A25F3F043001C0E5E /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F752925F3F043001C0E5E /* AppDefaults.swift */; };
 		1B4F752D25F3F124001C0E5E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F752C25F3F124001C0E5E /* NetworkServices.swift */; };
 		1B4F753125F3F67E001C0E5E /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F753025F3F67E001C0E5E /* Pizza.swift */; };
-		1B4F753525F3F99F001C0E5E /* MainDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F753425F3F99F001C0E5E /* MainDataModel.swift */; };
 		1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB082B125F25EFB0067665D /* AppDelegate.swift */; };
 		1BB082B425F25EFB0067665D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB082B325F25EFB0067665D /* SceneDelegate.swift */; };
 		1BB082BB25F25EFB0067665D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB082BA25F25EFB0067665D /* Assets.xcassets */; };
@@ -44,7 +43,6 @@
 		1B4F752925F3F043001C0E5E /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		1B4F752C25F3F124001C0E5E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		1B4F753025F3F67E001C0E5E /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
-		1B4F753425F3F99F001C0E5E /* MainDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataModel.swift; sourceTree = "<group>"; };
 		1BB082AE25F25EFB0067665D /* DoDo Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoDo Pizza.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB082B125F25EFB0067665D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BB082B325F25EFB0067665D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				1B4F752F25F3F66C001C0E5E /* Models */,
-				1B4F752C25F3F124001C0E5E /* NetworkServices.swift */,
 			);
 			path = "Data Layer";
 			sourceTree = "<group>";
@@ -173,6 +170,7 @@
 		1BB0830425F260900067665D /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				1B4F752C25F3F124001C0E5E /* NetworkServices.swift */,
 			);
 			path = "Service Layer";
 			sourceTree = "<group>";
@@ -231,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				1BB0835D25F2CC350067665D /* Custom */,
-				1BB0833B25F2A3D80067665D /* ActivityIndicator */,
 				1BB0832B25F273EA0067665D /* CollectionViewCells */,
 				1BB0832A25F273090067665D /* TableViewCells */,
 			);
@@ -243,7 +240,6 @@
 			children = (
 				1BB0833C25F2A5BD0067665D /* MainCell.swift */,
 				1BB0833F25F2A5CC0067665D /* MainCell.xib */,
-				1B4F753425F3F99F001C0E5E /* MainDataModel.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -264,13 +260,6 @@
 				1BB083A225F312110067665D /* UITableView.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		1BB0833B25F2A3D80067665D /* ActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
 		1BB0834425F2B2D60067665D /* Navigation */ = {
@@ -455,7 +444,6 @@
 			files = (
 				1B4F752A25F3F043001C0E5E /* AppDefaults.swift in Sources */,
 				1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */,
-				1B4F753525F3F99F001C0E5E /* MainDataModel.swift in Sources */,
 				1B1BA1D825F4597700E2168E /* AdvStub.swift in Sources */,
 				1BB0831425F263E80067665D /* InitialPresenter.swift in Sources */,
 				1BB0830D25F262EB0067665D /* InitialAssembly.swift in Sources */,

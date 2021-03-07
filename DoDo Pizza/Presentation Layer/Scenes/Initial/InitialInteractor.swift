@@ -25,7 +25,7 @@ class InitialInteractor {
     }
 }
 
-// MARK: - get Sections
+// MARK: - InitialInteractorInput
 extension InitialInteractor: InitialInteractorInputProtocol {
     func getObjects() {
         NetworkServices.shared.execute(AppDefaults.validAPIadress) { object in

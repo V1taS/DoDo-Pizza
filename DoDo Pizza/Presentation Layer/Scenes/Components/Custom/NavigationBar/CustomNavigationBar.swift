@@ -20,22 +20,9 @@ class CustomNavigationBar: UIView {
         return self.loadFromNibIfEmbeddedInDifferentNib()
     }
     
-    
     open override func awakeFromNib() {
         super.awakeFromNib()
         
         cityButton.setTitle("Химки ▽", for: .normal)
-        setupView()
-    }
-    
-    // MARK: - Setup functions
-    func setupView() {
-        
-        //
-        //
-        //        self.backgroundColor = .white
-        //        cityButton.setTitle("Text", for: .normal)
-        //        cityButton.backgroundColor = .red
-        //        cityButton.tintColor = .red
     }
 }

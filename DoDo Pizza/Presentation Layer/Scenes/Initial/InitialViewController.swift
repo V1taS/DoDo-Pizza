@@ -28,13 +28,10 @@ class InitialViewController: UIViewController {
     // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getDataFromNetwork()
         setupTableView()
         setupCollectionView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
     }
     
     // MARK: - Setup tableView
@@ -126,10 +123,4 @@ extension InitialViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         return cell
     }
-}
-
-// MARK: - Initial UICollectionViewDelegate and UICollectionViewDataSource
-extension InitialViewController: UIScrollViewDelegate {
-    
-
 }

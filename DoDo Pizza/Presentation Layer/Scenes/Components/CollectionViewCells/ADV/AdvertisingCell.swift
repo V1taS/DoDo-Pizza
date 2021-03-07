@@ -15,16 +15,4 @@ class AdvertisingCell: UICollectionViewCell {
     static var identifier: String {
         return String(describing: self)
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        setupView()
-    }
-    
-    // MARK: - Setup functions
-    func setupView() {
-        self.contentView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight]
-    }
-    
 }

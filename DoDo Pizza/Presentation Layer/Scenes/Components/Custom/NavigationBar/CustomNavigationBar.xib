@@ -12,22 +12,37 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomNavigationBar" customModule="DoDo_Pizza" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-jN-9Nw">
-                    <rect key="frame" x="20" y="53" width="65" height="32"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <state key="normal" title="Химки ▾">
-                        <color key="titleColor" systemColor="labelColor"/>
-                    </state>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="696-uG-vE3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-jN-9Nw">
+                            <rect key="frame" x="16" y="69" width="65" height="32"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Химки ▾">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="3Rf-yJ-Ey7"/>
+                        <constraint firstItem="JfH-jN-9Nw" firstAttribute="leading" secondItem="696-uG-vE3" secondAttribute="leading" constant="16" id="tnb-GB-Iqa"/>
+                        <constraint firstAttribute="height" constant="109" id="wer-bU-AyO"/>
+                        <constraint firstAttribute="bottom" secondItem="JfH-jN-9Nw" secondAttribute="bottom" constant="8" id="ynQ-eO-ZvO"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="JfH-jN-9Nw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="OYF-TZ-lcG"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JfH-jN-9Nw" secondAttribute="bottom" constant="8" id="hrF-cl-WPC"/>
+                <constraint firstItem="696-uG-vE3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8f7-eK-Neb"/>
+                <constraint firstItem="696-uG-vE3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hjc-p7-OWj"/>
+                <constraint firstItem="696-uG-vE3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T1Z-Hl-UyI"/>
+                <constraint firstItem="696-uG-vE3" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="uYC-fZ-kd4"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -35,7 +50,7 @@
             <connections>
                 <outlet property="cityButton" destination="JfH-jN-9Nw" id="Wqq-wg-6LC"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="86.049107142857139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="91.40625"/>
         </view>
     </objects>
     <resources>

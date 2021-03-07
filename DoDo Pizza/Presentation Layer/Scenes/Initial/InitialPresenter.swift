@@ -25,7 +25,7 @@ class InitialPresenter: InitialPresenterProtocol {
     }
 }
 
-// MARK - InitialInteractorOutput
+// MARK: - InitialInteractorOutput
 extension InitialPresenter: InitialInteractorOutputProtocol {
     func provideObjects(_ value: [Pizza]) {
         viewController.updateData(value)

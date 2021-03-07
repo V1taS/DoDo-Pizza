@@ -37,9 +37,6 @@ class MainCell: UITableViewCell {
     func setupView() {
         mainButton.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
         mainButton.addTarget(self, action: #selector(touchDown), for: .touchDown)
-        
-        self.backgroundColor = .clear
-        self.contentView.backgroundColor = .clear
         self.mainButton.layer.cornerRadius = self.mainButton.frame.height / 2
         self.mainButton.layer.masksToBounds = true
     }

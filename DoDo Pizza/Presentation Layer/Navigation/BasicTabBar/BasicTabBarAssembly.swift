@@ -21,9 +21,7 @@ enum BasicTabBarAssembly {
             rootController.tabBarItem = UITabBarItem(title: controllerData.title, image: controllerData.image, selectedImage: controllerData.imageSelected)
             rootControllers.append(rootController)
         }
-        
         reference.viewControllers = rootControllers
         reference.selectedIndex = 0
     }
-    
 }
