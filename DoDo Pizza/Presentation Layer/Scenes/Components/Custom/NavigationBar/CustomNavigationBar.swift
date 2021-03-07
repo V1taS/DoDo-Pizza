@@ -24,7 +24,7 @@ class CustomNavigationBar: UIView {
     open override func awakeFromNib() {
         super.awakeFromNib()
         
-        cityButton.setTitle("Химки", for: .normal)
+        cityButton.setTitle("Химки ▽", for: .normal)
         setupView()
     }
     

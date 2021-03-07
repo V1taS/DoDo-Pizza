@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="DoDo_Pizza" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="eIB-s5-JVQ" id="wNv-ad-VDV"/>
                 <outlet property="customNavigationBar" destination="ffY-93-qOX" id="8dc-ea-XSI"/>
                 <outlet property="tableView" destination="TOj-Ap-h2v" id="iCG-Wj-8iN"/>
                 <outlet property="view" destination="iN0-l3-epB" id="BKZ-cb-iqS"/>
@@ -21,26 +22,42 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
-                    <rect key="frame" x="0.0" y="107" width="414" height="789"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="789" id="jVX-O4-utt"/>
-                    </constraints>
-                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
-                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-93-qOX" customClass="CustomNavigationBar" customModule="DoDo_Pizza" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
+                    <rect key="frame" x="0.0" y="212" width="414" height="684"/>
+                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eIB-s5-JVQ">
+                    <rect key="frame" x="0.0" y="107" width="414" height="105"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="iNj-L5-dTY"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="r0w-JO-yxx">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
             <constraints>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0aN-uH-Sf3"/>
                 <constraint firstItem="TOj-Ap-h2v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6us-Kh-bgO"/>
                 <constraint firstItem="ffY-93-qOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79A-w0-12J"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="79I-EB-E22"/>
+                <constraint firstItem="TOj-Ap-h2v" firstAttribute="top" secondItem="eIB-s5-JVQ" secondAttribute="bottom" id="8ey-ee-5dj"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="I5I-we-BHl"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="top" secondItem="ffY-93-qOX" secondAttribute="bottom" id="KjS-U1-JrI"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="L9r-lI-BhE"/>
                 <constraint firstItem="ffY-93-qOX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TvR-aB-ilS"/>
-                <constraint firstItem="TOj-Ap-h2v" firstAttribute="top" secondItem="ffY-93-qOX" secondAttribute="bottom" id="Xiu-F5-Dqk"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="107" id="b3c-UK-aVu"/>
                 <constraint firstItem="ffY-93-qOX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cRv-NB-nvS"/>
                 <constraint firstItem="TOj-Ap-h2v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jDo-vp-3Hd"/>
                 <constraint firstAttribute="bottom" secondItem="TOj-Ap-h2v" secondAttribute="bottom" id="khY-Hn-Z4L"/>

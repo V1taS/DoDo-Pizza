@@ -17,7 +17,7 @@ extension StyleWrapper where Element: UIButton {
     
     static func btnOrangeBorder(title: String, radius: CGFloat) -> StyleWrapper {
         return .wrap { btn in
-            btn.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9490196078, blue: 0.9647058824, alpha: 1)
+            btn.backgroundColor = .white
             btn.setTitle(title, for: UIControl.State())
             btn.setTitleColor(.orange, for: .normal)
             btn.titleLabel?.font = .systemFont(ofSize: 13)

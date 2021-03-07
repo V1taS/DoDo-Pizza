@@ -17,25 +17,36 @@ class InitialViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var customNavigationBar: CustomNavigationBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Props
     private var pizza: [Pizza] = []
+    private var adv = AdvStub.advArr
     var presenter: InitialPresenterProtocol!
     
     // MARK: - Initialization
     override func viewDidLoad() {
         super.viewDidLoad()
         getDataFromNetwork()
-        setupComponents()
+        setupTableView()
+        setupCollectionView()
     }
     
-    // MARK: - Setup functions
-    func setupComponents() {
+    // MARK: - Setup tableView
+    func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9490196078, blue: 0.9647058824, alpha: 1)
+        self.tableView.backgroundColor = .white
         self.tableView.rowHeight = 161
         self.tableView.registerCellNib(MainCell.self)
+    }
+    
+    // MARK: - Setup CollectionView
+    func setupCollectionView() {
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.register(UINib(nibName: AdvertisingCell.identifier, bundle: nil), forCellWithReuseIdentifier: AdvertisingCell.identifier)
+        self.collectionView.backgroundColor = .white
     }
     
 }
@@ -72,14 +83,11 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
         let model = self.pizza[indexPath.row]
         
         cell.titleLabel.text = model.nameRu
-        cell.pizzaImage.sd_setImage(with: URL(string: "\(model.urlPreview ?? "")"))
+        cell.pizzaImage.sd_setImage(with: URL(string: "\(model.urlPreview ?? "")"),
+                                    placeholderImage: UIImage(named: "placeholder"))
         cell.descriptionLabel.text = model.description
         cell.mainButton.apply(.btnOrangeBorder(title: "\(model.price ?? 0) Р", radius: cell.mainButton.frame.height / 4))
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
@@ -91,4 +99,20 @@ extension InitialViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.cellForRow(at: indexPath) as? MainCell {
             cell.zoomIn()
         }}
+}
+
+// MARK: - Initial UICollectionViewDelegate and UICollectionViewDataSource
+extension InitialViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        adv.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AdvertisingCell.identifier, for: indexPath) as? AdvertisingCell else { return UICollectionViewCell() }
+        
+        guard let currentADV = adv[indexPath.row] else { return cell }
+        cell.advImage.image = currentADV
+        
+        return cell
+    }
 }

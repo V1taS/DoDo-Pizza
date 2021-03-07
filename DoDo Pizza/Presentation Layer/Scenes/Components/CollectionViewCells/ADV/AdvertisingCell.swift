@@ -16,11 +16,7 @@ class AdvertisingCell: UICollectionViewCell {
         return String(describing: self)
     }
     
-    override func awakeAfter(using aDecoder: NSCoder) -> Any? {
-        return self.loadFromNibIfEmbeddedInDifferentNib()
-    }
-    
-    open override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         
         setupView()
@@ -28,9 +24,7 @@ class AdvertisingCell: UICollectionViewCell {
     
     // MARK: - Setup functions
     func setupView() {
-        self.backgroundColor = .clear
-        self.contentView.backgroundColor = .clear
-        
+        self.contentView.autoresizingMask = [UIView.AutoresizingMask.flexibleHeight]
     }
     
 }

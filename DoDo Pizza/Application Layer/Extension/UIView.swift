@@ -12,8 +12,6 @@ extension UIView {
     class func loadNib(withOwner owner: Any? = nil) -> Self {
         let name = String(describing: type(of: self)).components(separatedBy: ".")[0]
         let view = UINib(nibName: name, bundle: nil).instantiate(withOwner: owner, options: nil)[0]
-        
-        // swiftlint:disable:next force_unwrapping
         return cast(view)!
     }
     
@@ -29,13 +27,6 @@ extension UIView {
         
         return self
     }
-}
-
-private func cast<T, U>(_ value: T) -> U? {
-    return value as? U
-}
-
-extension UIView {
     
     func zoomIn(duration: TimeInterval = 0.2) {
         self.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
@@ -52,4 +43,8 @@ extension UIView {
         }) { (animationCompleted: Bool) -> Void in
         }
     }
+}
+
+private func cast<T, U>(_ value: T) -> U? {
+    return value as? U
 }

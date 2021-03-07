@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		122ED0FAB514AF0CD12CDAEE /* Pods_DoDo_Pizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D953EFCCE13465A43788C48 /* Pods_DoDo_Pizza.framework */; };
+		1B1BA1D825F4597700E2168E /* AdvStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1BA1D725F4597700E2168E /* AdvStub.swift */; };
 		1B4F752A25F3F043001C0E5E /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F752925F3F043001C0E5E /* AppDefaults.swift */; };
 		1B4F752D25F3F124001C0E5E /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F752C25F3F124001C0E5E /* NetworkServices.swift */; };
 		1B4F753125F3F67E001C0E5E /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4F753025F3F67E001C0E5E /* Pizza.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0D953EFCCE13465A43788C48 /* Pods_DoDo_Pizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoDo_Pizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1BA1D725F4597700E2168E /* AdvStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvStub.swift; sourceTree = "<group>"; };
 		1B4F752925F3F043001C0E5E /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		1B4F752C25F3F124001C0E5E /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		1B4F753025F3F67E001C0E5E /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1BA1D325F4594F00E2168E /* STUB */ = {
+			isa = PBXGroup;
+			children = (
+				1B1BA1D725F4597700E2168E /* AdvStub.swift */,
+			);
+			path = STUB;
+			sourceTree = "<group>";
+		};
 		1B4F752F25F3F66C001C0E5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		1BB0831C25F265490067665D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1B1BA1D325F4594F00E2168E /* STUB */,
 				1BB0835025F2B3B90067665D /* Style */,
 				1BB082BA25F25EFB0067665D /* Assets.xcassets */,
 			);
@@ -445,6 +456,7 @@
 				1B4F752A25F3F043001C0E5E /* AppDefaults.swift in Sources */,
 				1BB082B225F25EFB0067665D /* AppDelegate.swift in Sources */,
 				1B4F753525F3F99F001C0E5E /* MainDataModel.swift in Sources */,
+				1B1BA1D825F4597700E2168E /* AdvStub.swift in Sources */,
 				1BB0831425F263E80067665D /* InitialPresenter.swift in Sources */,
 				1BB0830D25F262EB0067665D /* InitialAssembly.swift in Sources */,
 				1BB083A625F319920067665D /* StyleWrapper.swift in Sources */,

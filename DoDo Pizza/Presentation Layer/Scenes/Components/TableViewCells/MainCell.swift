@@ -24,11 +24,11 @@ class MainCell: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
-    override public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
-    open override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
     }
@@ -49,7 +49,7 @@ class MainCell: UITableViewCell {
 extension MainCell {
     @objc private func touchUpInside() {
         mainButton.setTitleColor(.orange, for: .normal)
-        mainButton.backgroundColor = #colorLiteral(red: 0.9529411765, green: 0.9490196078, blue: 0.9647058824, alpha: 1)
+        mainButton.backgroundColor = .white
     }
     
     @objc private func touchDown() {
