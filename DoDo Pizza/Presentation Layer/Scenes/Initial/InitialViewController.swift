@@ -18,6 +18,7 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var customNavigationBar: CustomNavigationBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     // MARK: - Props
     private var pizza: [Pizza] = []
@@ -32,10 +33,15 @@ class InitialViewController: UIViewController {
         setupCollectionView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     // MARK: - Setup tableView
     func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.bounces = false
         self.tableView.backgroundColor = .white
         self.tableView.rowHeight = 161
         self.tableView.registerCellNib(MainCell.self)
@@ -49,6 +55,11 @@ class InitialViewController: UIViewController {
         self.collectionView.backgroundColor = .white
     }
     
+    // MARK: - Setup ScrollView
+    func setupScrollView() {
+        scrollView.delegate = self
+        scrollView.bounces = false
+    }
 }
 
 // MARK: - Actions
@@ -115,4 +126,10 @@ extension InitialViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         return cell
     }
+}
+
+// MARK: - Initial UICollectionViewDelegate and UICollectionViewDataSource
+extension InitialViewController: UIScrollViewDelegate {
+    
+
 }

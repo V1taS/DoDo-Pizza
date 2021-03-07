@@ -22,20 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-93-qOX" customClass="CustomNavigationBar" customModule="DoDo_Pizza" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
-                    <rect key="frame" x="0.0" y="212" width="414" height="684"/>
-                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
-                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                </tableView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eIB-s5-JVQ">
-                    <rect key="frame" x="0.0" y="107" width="414" height="105"/>
+                    <rect key="frame" x="0.0" y="101" width="414" height="109"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="105" id="iNj-L5-dTY"/>
+                        <constraint firstAttribute="height" constant="109" id="iNj-L5-dTY"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="r0w-JO-yxx">
                         <size key="itemSize" width="128" height="128"/>
@@ -44,23 +35,32 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-93-qOX" customClass="CustomNavigationBar" customModule="DoDo_Pizza" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Ap-h2v">
+                    <rect key="frame" x="0.0" y="212" width="414" height="684"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="684" id="hDo-eu-e69"/>
+                    </constraints>
+                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemGreenColor"/>
             <constraints>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0aN-uH-Sf3"/>
-                <constraint firstItem="TOj-Ap-h2v" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6us-Kh-bgO"/>
-                <constraint firstItem="ffY-93-qOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79A-w0-12J"/>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="79I-EB-E22"/>
-                <constraint firstItem="TOj-Ap-h2v" firstAttribute="top" secondItem="eIB-s5-JVQ" secondAttribute="bottom" id="8ey-ee-5dj"/>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="I5I-we-BHl"/>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="top" secondItem="ffY-93-qOX" secondAttribute="bottom" id="KjS-U1-JrI"/>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="L9r-lI-BhE"/>
-                <constraint firstItem="ffY-93-qOX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TvR-aB-ilS"/>
-                <constraint firstItem="eIB-s5-JVQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="107" id="b3c-UK-aVu"/>
-                <constraint firstItem="ffY-93-qOX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cRv-NB-nvS"/>
-                <constraint firstItem="TOj-Ap-h2v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jDo-vp-3Hd"/>
-                <constraint firstAttribute="bottom" secondItem="TOj-Ap-h2v" secondAttribute="bottom" id="khY-Hn-Z4L"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="57" id="7Pk-Ty-3P2"/>
+                <constraint firstAttribute="bottom" secondItem="ffY-93-qOX" secondAttribute="bottom" constant="789" id="7vz-Vb-LCT"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="TOj-Ap-h2v" secondAttribute="trailing" id="9a2-n9-44N"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="A10-5Q-BSb"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="trailing" secondItem="ffY-93-qOX" secondAttribute="trailing" id="A7i-oZ-8yo"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="ffY-93-qOX" secondAttribute="leading" id="CWF-bS-NbZ"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VQQ-SB-TXF"/>
+                <constraint firstItem="eIB-s5-JVQ" firstAttribute="leading" secondItem="TOj-Ap-h2v" secondAttribute="leading" id="Vj6-HB-B9V"/>
+                <constraint firstAttribute="bottom" secondItem="TOj-Ap-h2v" secondAttribute="bottom" id="cNM-8v-VmG"/>
+                <constraint firstItem="ffY-93-qOX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y3n-e6-j1L"/>
             </constraints>
             <point key="canvasLocation" x="76.811594202898561" y="94.419642857142847"/>
         </view>
